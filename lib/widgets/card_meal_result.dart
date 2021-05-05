@@ -95,7 +95,7 @@ class CardMealResult extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        _buildSubtitle('Área: '),
+                        _buildSubtitle('Pais: '),
                         _buildDescription(newItem[0].strArea),
                       ],
                     ),

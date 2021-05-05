@@ -73,14 +73,14 @@ class MealView extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    _buildSubtitle('Área: '),
+                    _buildSubtitle('Pais: '),
                     _buildDescription(newItem[0].strArea),
                   ],
                 ),
                 SizedBox(
                   height: 10.0,
                 ),
-                _buildSubtitle('Instruções:'),
+                _buildSubtitle('Instrucciones:'),
                 SizedBox(
                   height: 8.0,
                 ),

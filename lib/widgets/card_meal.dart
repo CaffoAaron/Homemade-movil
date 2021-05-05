@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:theMealDB_app/model/item_model.dart';
+import 'package:theMealDB_app/model/recipe.dart';
 import 'package:theMealDB_app/resources/repository.dart';
 import 'package:theMealDB_app/screens/item-screen.dart';
 
@@ -7,10 +10,13 @@ class CardMeal extends StatelessWidget {
   const CardMeal({
     Key key,
     @required Repository repository,
+    @required int id,
   })  : _repository = repository,
+        _idRecipe = id,
         super(key: key);
 
   final Repository _repository;
+  final int _idRecipe;
 
   Widget _buildSubtitle(String subtitle) {
     return Text(
@@ -35,7 +41,7 @@ class CardMeal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: FutureBuilder<ItemModel>(
-        future: _repository.randomMeals(),
+        future: _repository.getRecipe(_idRecipe),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             List<Meals> newItem = snapshot.data.meals;
@@ -91,7 +97,7 @@ class CardMeal extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        _buildSubtitle('Área: '),
+                        _buildSubtitle('Pais: '),
                         _buildDescription(newItem[0].strArea),
                       ],
                     ),

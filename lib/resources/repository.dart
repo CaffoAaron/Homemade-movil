@@ -3,23 +3,26 @@ import 'dart:async';
 import 'package:theMealDB_app/model/categories_item_model.dart';
 import 'package:theMealDB_app/model/category_model.dart';
 import 'package:theMealDB_app/model/item_model.dart';
+import 'package:theMealDB_app/model/recipe.dart';
 
-import 'meals_api.dart';
+import 'homemade_api.dart';
 
 class Repository {
-  final mealsApi = MealsApi();
+  final homemadeApi = HomemadeApi();
 
-  Future<ItemModel> fetchAllMeals(String type) => mealsApi.fetchMeals(type);
+  Future<ItemModel> fetchAllMeals(String type) => homemadeApi.fetchMeals(type);
 
   Future<ItemModel> fetchDetailMeals(int id) =>
-      mealsApi.fetchDetail(id.toString());
+      homemadeApi.fetchDetail(id.toString());
 
-  Future<ItemModel> searchMeals(String name) => mealsApi.searchMeals(name);
+  Future<ItemModel> searchMeals(String name) => homemadeApi.searchMeals(name);
 
-  Future<ItemModel> randomMeals() => mealsApi.randomMeals();
+  Future<ItemModel> randomMeals() => homemadeApi.randomMeals();
 
-  Future<CategoryModel> searchCategories() => mealsApi.searchCategories();
+  Future<CategoryModel> searchCategories() => homemadeApi.searchCategories();
 
   Future<CategoryItemModel> fetchCategories(String category) =>
-      mealsApi.fetchCategories(category);
+      homemadeApi.fetchCategories(category);
+
+  Future<ItemModel> getRecipe(int id) => homemadeApi.getRecipe(id);
 }

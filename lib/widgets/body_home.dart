@@ -16,7 +16,7 @@ class BodyHome extends StatelessWidget {
         child: ListView(
           children: [
             Subtitle('Que quires cocinar hoy?'),
-            for (int i = 0; i <= 3; i++) CardMeal(repository: _repository),
+            for (int i = 0; i <= 3; i++) CardMeal(repository: _repository, id: 1,),
           ],
         ),
       ),
