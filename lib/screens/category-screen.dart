@@ -17,7 +17,8 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CategoryItem(repository: _repository),
+      body: CategoryItem(repository: _repository
+      ),
     );
   }
 }
