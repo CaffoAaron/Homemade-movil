@@ -74,15 +74,15 @@ class HomemadeApi {
 
   Future<ItemModel> getRecipe(int id) async{
     // Response response;
-    // response = await client.get("https://homemade-api-tf.herokuapp.com/api/recipe/1");
-    // log('GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
-    // log(response.body);
-    // if(response.statusCode == 200){
-    //   log("ssssssssss");
-    //   return ItemModel.fromJson(json.decode(response.body));
-    // }else{
-    //   throw Exception('Failed to load list of $id meals');
-    // }
+    //     // response = await client.get("https://homemade-api-tf.herokuapp.com/api/recipe/1");
+    //     // log('GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
+    //     // log(response.body);
+    //     // if(response.statusCode == 200){
+    //     //   log("ssssssssss");
+    //     //   return ItemModel.fromJson(json.decode(response.body));
+    //     // }else{
+    //     //   throw Exception('Failed to load list of $id meals');
+    //     // }
     final response = await client.get("$_baseUrl/random.php");
     if (response.statusCode == 200) {
       log(response.body);
