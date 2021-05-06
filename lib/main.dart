@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:theMealDB_app/screens/category-screen.dart';
-import 'package:theMealDB_app/screens/item-screen.dart';
-import 'package:theMealDB_app/screens/result_search-screen.dart';
+import 'package:Homemade/screens/category-screen.dart';
+import 'package:Homemade/screens/item-screen.dart';
+import 'package:Homemade/screens/result_search-screen.dart';
 
 import './screens/home-screen.dart';
 import './screens/tabs_screen.dart';

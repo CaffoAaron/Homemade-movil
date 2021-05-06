@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:theMealDB_app/model/item_model.dart';
-import 'package:theMealDB_app/resources/repository.dart';
-import 'package:theMealDB_app/screens/item-screen.dart';
+import 'package:Homemade/model/item_model.dart';
+import 'package:Homemade/resources/repository.dart';
+import 'package:Homemade/screens/item-screen.dart';
 
 class CardMealResult extends StatelessWidget {
   const CardMealResult({

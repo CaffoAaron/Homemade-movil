@@ -1,10 +1,10 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:theMealDB_app/model/item_model.dart';
-import 'package:theMealDB_app/model/recipe.dart';
-import 'package:theMealDB_app/resources/repository.dart';
-import 'package:theMealDB_app/screens/item-screen.dart';
+import 'package:Homemade/model/item_model.dart';
+import 'package:Homemade/model/recipe.dart';
+import 'package:Homemade/resources/repository.dart';
+import 'package:Homemade/screens/item-screen.dart';
 
 class CardMeal extends StatelessWidget {
   const CardMeal({

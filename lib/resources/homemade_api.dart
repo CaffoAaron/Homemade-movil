@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:http/http.dart' show Client, Response;
-import 'package:theMealDB_app/model/categories_item_model.dart';
-import 'package:theMealDB_app/model/category_model.dart';
-import 'package:theMealDB_app/model/recipe.dart';
+import 'package:Homemade/model/categories_item_model.dart';
+import 'package:Homemade/model/category_model.dart';
+import 'package:Homemade/model/recipe.dart';
 import 'dart:convert';
 import '../model/item_model.dart';
 import 'dart:developer';

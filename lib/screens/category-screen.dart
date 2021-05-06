@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:theMealDB_app/widgets/category_item.dart';
+import 'package:Homemade/widgets/category_item.dart';
 
 import '../resources/repository.dart';
 

@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:theMealDB_app/model/categories_item_model.dart';
-import 'package:theMealDB_app/model/category_model.dart';
-import 'package:theMealDB_app/model/item_model.dart';
-import 'package:theMealDB_app/model/recipe.dart';
+import 'package:Homemade/model/categories_item_model.dart';
+import 'package:Homemade/model/category_model.dart';
+import 'package:Homemade/model/item_model.dart';
+import 'package:Homemade/model/recipe.dart';
 
 import 'homemade_api.dart';
 
