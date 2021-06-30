@@ -26,8 +26,8 @@ BottomNavigationBar navigationBar(Function selectPage, int selectedPageIndex) {
         label: 'Categorias',
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.person),
-        label: 'Perfil',
+        icon: Icon(Icons.photo_outlined),
+        label: 'Diccionario ',
       )
     ],
   );

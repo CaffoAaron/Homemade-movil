@@ -17,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
             Container(
               height: 120,
               child: Image(
-                image: AssetImage('assets/images/profile.png'),
+                image: AssetImage('assets/images/macarrao.jpg'),
               ),
             ),
             Container(
@@ -30,14 +30,10 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               child: TextField(
+                enabled: false,
                 decoration: InputDecoration(
                   border: InputBorder.none,
-                  icon: Icon(
-                    Icons.email,
-                    color: textColor,
-                    size: 20,
-                  ),
-                  hintText: 'Email',
+                  labelText: 'ASAR: Cocer un manjar en el horno, parrilla o asador con grasa solamente.',
                   hintStyle: TextStyle(color: textColor),
                 ),
               ),
@@ -52,14 +48,46 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               child: TextField(
+                enabled: false,
                 decoration: InputDecoration(
                   border: InputBorder.none,
-                  icon: Icon(
-                    Icons.https,
-                    color: textColor,
-                    size: 20,
-                  ),
-                  hintText: 'Contraseña',
+                  labelText: 'BIZCOCHO: Masa de harina, huevos y azúcar cocida al horno.',
+                  hintStyle: TextStyle(color: textColor),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(20),
+              padding: EdgeInsets.symmetric(horizontal: 25, vertical: 5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                border: Border.all(
+                  color: secundaryColor.withOpacity(0.32),
+                ),
+              ),
+              child: TextField(
+                enabled: false,
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                  labelText: 'BLANQUETA: Guiso de ternera, volatería o conejo, en salsa cremosa.',
+                  hintStyle: TextStyle(color: textColor),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(20),
+              padding: EdgeInsets.symmetric(horizontal: 25, vertical: 5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                border: Border.all(
+                  color: secundaryColor.withOpacity(0.32),
+                ),
+              ),
+              child: TextField(
+                enabled: false,
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                  labelText: 'BRIOCHE: Bollo de masa con levadura, ligeramente dulce.',
                   hintStyle: TextStyle(color: textColor),
                 ),
               ),
